@@ -5,7 +5,6 @@ A deep learning-based predictive modeling system leveraging seismic and geospati
 ## 🧠 Model Architecture
 
 - **Architecture:** Fully connected deep neural network
-- **Framework:** TensorFlow / Keras (Sequential API)
 - **Loss Function:** Depends on target type 
 - **Evaluation Metrics:** Accuracy, Loss, or custom metrics as per the task 
 
