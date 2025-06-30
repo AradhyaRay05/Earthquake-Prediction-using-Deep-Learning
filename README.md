@@ -20,8 +20,6 @@ A deep learning-based predictive modeling system leveraging seismic and geospati
 
 
 
-- `scikit-learn`
-
 - Python  
 - Libraries: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `TensorFlow`, `Keras`
 - Jupyter Notebook
