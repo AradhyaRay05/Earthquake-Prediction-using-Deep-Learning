@@ -18,7 +18,7 @@ A deep learning-based predictive modeling system leveraging seismic and geospati
 
 ## 🛠️ Tech Stack
 
-- `TensorFlow`
+
 - `Keras`
 - `Pandas`
 - `NumPy`
