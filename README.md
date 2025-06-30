@@ -26,10 +26,8 @@ A deep learning-based predictive modeling system leveraging seismic and geospati
 - `Seaborn`
 - `scikit-learn`
 
-## 🔧 Tech Stack
-
 - Python  
-- Libraries: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`  
+- Libraries: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `TensorFlow`, `Keras`
 - Jupyter Notebook
 
 ## 📬 Contact
