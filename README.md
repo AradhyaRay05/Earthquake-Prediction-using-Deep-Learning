@@ -20,7 +20,6 @@ A deep learning-based predictive modeling system leveraging seismic and geospati
 
 
 
-- `Matplotlib`
 - `Seaborn`
 - `scikit-learn`
 
