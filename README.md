@@ -19,7 +19,6 @@ A deep learning-based predictive modeling system leveraging seismic and geospati
 ## 🛠️ Tech Stack
 
 
-- `Pandas`
 - `NumPy`
 - `Matplotlib`
 - `Seaborn`
