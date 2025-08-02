@@ -79,3 +79,19 @@ The model is deployed using **Streamlit**, allowing for a responsive and user-fr
 
 ## 📁 Project Structure
 
+```
+GeoQuakePredict/
+├── dataset/
+│   └── database.csv                 # Raw dataset used for training
+│
+├── app.py                           # Streamlit web app for live predictions
+├── Earthquake_Prediction.ipynb      # Jupyter notebook for data processing and model training
+├── earthquake_prediction_model.keras# Trained deep learning model saved in Keras format
+├── scaler.pkl                       # Pre-fitted StandardScaler object for input normalization
+├── requirements.txt                 # Python dependencies
+├── .gitignore                       # Files/directories to exclude from Git tracking
+└── README.md                        # Project documentation
+
+```
+
+
