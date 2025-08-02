@@ -82,15 +82,14 @@ The model is deployed using **Streamlit**, allowing for a responsive and user-fr
 ```
 GeoQuakePredict/
 ├── dataset/
-│   └── database.csv                 # Raw dataset used for training
-│
-├── app.py                           # Streamlit web app for live predictions
-├── Earthquake_Prediction.ipynb      # Jupyter notebook for data processing and model training
-├── earthquake_prediction_model.keras# Trained deep learning model saved in Keras format
-├── scaler.pkl                       # Pre-fitted StandardScaler object for input normalization
-├── requirements.txt                 # Python dependencies
-├── .gitignore                       # Files/directories to exclude from Git tracking
-└── README.md                        # Project documentation
+│   └── database.csv                   # Raw dataset used for training
+├── .gitignore                         # Files/directories to exclude from Git tracking
+├── Earthquake_Prediction.ipynb        # Jupyter notebook for data processing and model training
+├── README.md                          # Project documentation
+├── ├── app.py                         # Streamlit web app for live predictions
+├── earthquake_prediction_model.keras  # Trained deep learning model saved in Keras format
+├── requirements.txt                   # Python dependencies
+└── scaler.pkl                         # Pre-fitted StandardScaler object for input normalization
 
 ```
 
