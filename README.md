@@ -1,59 +1,79 @@
-# 🌍 GeoQuakePredict
-
-**AI-powered Earthquake Impact Predictor**
+# 🌍 GeoQuakePredict - AI-powered Earthquake Impact Predictor
 
 ---
 
 ## 🔍 Project Goal
 
-GeoQuakePredict is designed to **predict the depth and magnitude of earthquakes** using geological and temporal data inputs. By leveraging machine learning and deep learning models, this project aims to provide early insights that could contribute to disaster preparedness and risk mitigation.
+GeoQuakePredict aims to **predict the depth and magnitude of earthquakes** based on geological coordinates and temporal attributes using a trained deep learning model. This can assist researchers and disaster response planners in identifying potential impacts of seismic events.
 
 ---
 
 ## 📌 Project Overview
 
-Earthquakes are unpredictable natural phenomena, but with the right historical data and machine learning techniques, we can forecast critical parameters like **depth** and **magnitude** with reasonable accuracy.  
-GeoQuakePredict allows users to input parameters such as latitude, longitude, date, and time, and provides predictions through a deployed web app interface.
+This project involves building a regression-based deep learning model that takes in user-defined inputs like latitude, longitude, and timestamp to forecast two key earthquake parameters: **Depth** (in km) and **Magnitude** (Richter scale).  
+The model is deployed using **Streamlit**, allowing for a responsive and user-friendly prediction interface.
 
 ---
 
 ## 🔁 Project Workflow
 
 ### 📊 1. Data Preprocessing
-- Cleaned and normalized data
-- Extracted temporal features (year, month, day, hour, minute, second)
-- Applied feature scaling using `StandardScaler`
+- Loaded the earthquake dataset containing features such as `latitude`, `longitude`, `date`, and `time`.
+- Extracted relevant time-based features: `year`, `month`, `day`, `hour`, `minute`, `second`.
+- Handled missing/null values.
+- Standardized the input features using `StandardScaler` to normalize the data for efficient training.
+- Split the data into **training** and **testing** sets (80:20 split).
 
 ### 🤖 2. Model Building
-- Tested multiple models: Linear Regression, Random Forest, and Deep Neural Network
-- Final model: **Deep Learning (Keras Sequential)**
-- Trained to predict two outputs: **Depth** and **Magnitude**
+- Built a **Deep Learning model using TensorFlow and Keras**.
+- Model architecture:
+  - Input layer: 8 features
+  - Hidden layers: Multiple Dense layers with ReLU activation
+  - Output layer: 2 neurons (for Depth and Magnitude)
+- Used **Mean Squared Error (MSE)** as the loss function and **Adam** optimizer.
+- Trained the model over several epochs to minimize prediction errors.
 
 ### ✅ 3. Evaluation Metrics
-- Metrics used: **Mean Absolute Error (MAE)** and **Root Mean Squared Error (RMSE)**
-- Achieved low error values, indicating reliable predictions
+- Evaluated the model using:
+  - **Mean Absolute Error (MAE)**
+  - **Root Mean Squared Error (RMSE)**
+- Achieved:
+  - **MAE (Depth): ~11.28**
+  - **MAE (Magnitude): ~0.15**
+- The low MAE values indicate strong prediction performance for both outputs.
 
 ### 🌐 4. Deployment
-- Deployed using **Streamlit**
-- Interactive sliders and date/time pickers for user input
-- Real-time prediction displayed on the interface
+- Built an interactive web interface using **Streamlit**.
+- Accepts user inputs for:
+  - Latitude
+  - Longitude
+  - Date
+  - Time
+- Performs scaling using the saved `StandardScaler` (`scaler.pkl`) and loads the trained model (`earthquake_prediction_model.keras`).
+- Displays:
+  - **Predicted Depth**
+  - **Predicted Magnitude**
 
 ---
 
 ## 🧰 Tech Stack
 
-- **Frontend**: Streamlit
-- **Backend/Modeling**:
-  - Python
-  - TensorFlow / Keras
-  - Scikit-learn
-  - NumPy
-  - Pandas
-- **Visualization**:
-  - Matplotlib
-  - Seaborn
-- **Utilities**:
-  - Joblib (for model/scaler serialization)
+### 📌 Programming Language
+- Python 3.x
+
+### 🧠 Machine Learning & Deep Learning
+- TensorFlow / Keras
+- scikit-learn
+
+### 📊 Data Manipulation & Visualization
+- pandas
+- numpy
+- matplotlib
+- seaborn
+
+### 🌐 Deployment
+- Streamlit
+- joblib (for scaler serialization)
 
 ---
 
