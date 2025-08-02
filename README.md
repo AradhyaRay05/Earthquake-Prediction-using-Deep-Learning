@@ -1,4 +1,4 @@
-# 🌍 Earthquake Prediction using Deep Learning
+# 🌍 GeoQuakePredict - AI-powered Earthquake Impact Predictor
 
 A deep learning-based predictive modeling system leveraging seismic and geospatial features to forecast earthquake occurrences. The model is developed using TensorFlow/Keras and trained on historical earthquake data to identify patterns and improve prediction reliability.
 
