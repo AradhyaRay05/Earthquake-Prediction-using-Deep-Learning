@@ -1,34 +1,61 @@
-# 🌍 GeoQuakePredict - AI-powered Earthquake Impact Predictor
+# 🌍 GeoQuakePredict
 
-A deep learning-based predictive modeling system leveraging seismic and geospatial features to forecast earthquake occurrences. The model is developed using TensorFlow/Keras and trained on historical earthquake data to identify patterns and improve prediction reliability.
-
-## 🧠 Model Architecture
-
-- **Architecture:** Fully connected deep neural network
-- **Loss Function:** Depends on target type 
-- **Evaluation Metrics:** Accuracy, Loss, or custom metrics as per the task 
-
-## 🔍 Key Highlights
-
-- Feature engineering from seismic time-series data
-- Train-test validation pipeline using stratified sampling
-- Scalable architecture suitable for deployment or integration into larger geospatial analysis systems
-- Visual diagnostics including learning curves and model behavior under various configurations
-
-## 🛠️ Tech Stack
-
-- Python  
-- Libraries: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `TensorFlow`, `Keras`
-- Jupyter Notebook
-
-## 📬 Contact
-
-<p>
-  <a href="mailto:aradhyaray99@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="https://www.linkedin.com/in/rayaradhya"><img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="https://github.com/AradhyaRay05"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-</p>
+**AI-powered Earthquake Impact Predictor**
 
 ---
 
-Thanks for visiting ! Feel free to explore my other repositories and connect with me. 🚀 
+## 🔍 Project Goal
+
+GeoQuakePredict is designed to **predict the depth and magnitude of earthquakes** using geological and temporal data inputs. By leveraging machine learning and deep learning models, this project aims to provide early insights that could contribute to disaster preparedness and risk mitigation.
+
+---
+
+## 📌 Project Overview
+
+Earthquakes are unpredictable natural phenomena, but with the right historical data and machine learning techniques, we can forecast critical parameters like **depth** and **magnitude** with reasonable accuracy.  
+GeoQuakePredict allows users to input parameters such as latitude, longitude, date, and time, and provides predictions through a deployed web app interface.
+
+---
+
+## 🔁 Project Workflow
+
+### 📊 1. Data Preprocessing
+- Cleaned and normalized data
+- Extracted temporal features (year, month, day, hour, minute, second)
+- Applied feature scaling using `StandardScaler`
+
+### 🤖 2. Model Building
+- Tested multiple models: Linear Regression, Random Forest, and Deep Neural Network
+- Final model: **Deep Learning (Keras Sequential)**
+- Trained to predict two outputs: **Depth** and **Magnitude**
+
+### ✅ 3. Evaluation Metrics
+- Metrics used: **Mean Absolute Error (MAE)** and **Root Mean Squared Error (RMSE)**
+- Achieved low error values, indicating reliable predictions
+
+### 🌐 4. Deployment
+- Deployed using **Streamlit**
+- Interactive sliders and date/time pickers for user input
+- Real-time prediction displayed on the interface
+
+---
+
+## 🧰 Tech Stack
+
+- **Frontend**: Streamlit
+- **Backend/Modeling**:
+  - Python
+  - TensorFlow / Keras
+  - Scikit-learn
+  - NumPy
+  - Pandas
+- **Visualization**:
+  - Matplotlib
+  - Seaborn
+- **Utilities**:
+  - Joblib (for model/scaler serialization)
+
+---
+
+## 📁 Project Structure
+
