@@ -85,8 +85,9 @@ GeoQuakePredict/
 │   └── database.csv                   # Raw dataset used for training
 ├── .gitignore                         # Files/directories to exclude from Git tracking
 ├── Earthquake_Prediction.ipynb        # Jupyter notebook for data processing and model training
+├── LICENSE                            # Allows reuse, with attribution, no warranty
 ├── README.md                          # Project documentation
-├── ├── app.py                         # Streamlit web app for live predictions
+├── app.py                             # Streamlit web app for live predictions
 ├── earthquake_prediction_model.keras  # Trained deep learning model saved in Keras format
 ├── requirements.txt                   # Python dependencies
 └── scaler.pkl                         # Pre-fitted StandardScaler object for input normalization
