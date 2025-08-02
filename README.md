@@ -94,3 +94,36 @@ GeoQuakePredict/
 ```
 
 
+---
+
+## ✨ Features
+
+- 🌐 **Web App Interface** – Built with Streamlit for fast and interactive predictions.
+- 📍 **Geographical Input** – Takes in latitude and longitude.
+- 🕒 **Temporal Input** – Accepts date and time values.
+- 📈 **Dual Output Prediction** – Simultaneously predicts **depth** and **magnitude**.
+- 🧠 **Deep Learning Model** – Powered by TensorFlow, trained on real-world seismic data.
+- ⚙️ **Preprocessing Included** – Scales and formats inputs behind the scenes.
+
+---
+
+## 🚀 Future Enhancements
+
+- 🌍 Add **map visualizations** for predicted earthquake locations.
+- 🧮 Integrate **uncertainty estimation** with confidence ranges.
+- 🛎️ Enable **risk alert system** based on thresholds.
+- 🔍 Improve generalization using larger or global datasets.
+- 📡 Add **real-time data ingestion** from earthquake monitoring APIs.
+
+---
+
+## 🧪 How to Run Locally
+
+```bash
+git clone https://github.com/yourusername/GeoQuakePredict.git
+cd GeoQuakePredict
+pip install -r requirements.txt
+streamlit run app.py
+
+
+
