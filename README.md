@@ -119,11 +119,12 @@ GeoQuakePredict/
 
 ## 🧪 How to Run Locally
 
-```bash
+```
 git clone https://github.com/yourusername/GeoQuakePredict.git
 cd GeoQuakePredict
 pip install -r requirements.txt
 streamlit run app.py
 
+```
 
 
