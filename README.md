@@ -1,7 +1,5 @@
 # 🌍 GeoQuakePredict - AI-powered Earthquake Impact Predictor
 
----
-
 ## 🔍 Project Goal
 
 GeoQuakePredict aims to **predict the depth and magnitude of earthquakes** based on geological coordinates and temporal attributes using a trained deep learning model. This can assist researchers and disaster response planners in identifying potential impacts of seismic events.
